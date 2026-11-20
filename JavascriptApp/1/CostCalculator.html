@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1.1 Cost Calculator </title>
+</head>
+<body>
+    <script>
+        document.body.innerHTML= Math.round( ((2*1095) + 790 + 499) * .12) / 100 + ((2 * 1095) + 790 + 499) / 100 ; 
+        
+        // Answering the optional
+        // alert((2 * 1095 + 790 + 499) / 100 );
+        
+        /*
+Your customer orders 2 items at $10.95 each and 1 item at $7.90. Shipping is $4.99, and 12% tax applies to the items plus shipping.
+
+Your goal: print the final total in dollars, correctly rounded.   
+
+First step
+Customer orders 2 items $10.95 each and 1 item at $7.90
+- 2 * 10.95 + 7.90
+- Float gives inaccuracies if accuracies, much better to convert into cent and convert to dollars
+- ((2 * 1095) + 790) / 100 = 29.8
+
+Second Step
+Add the Shipping fee of $4.99
+- Add shipping fee of $4.99
+- ((2 * 1095) + 790 + 499) / 100 = 34.79
+
+Third Step
+Get the 12% taxes.
+- Get the 12 taxes convert it to cents 12/100 is 0.12;
+- ((2 * 1095) + 790 + 499) / 100
+- (((2 * 1095) + 790 + 499) * .12 )/ 100
+-Math.round( ((2*1095) + 790 + 499) * .12) / 100
+
+Fourth Step
+print the total in dollars correctly rounded.
+- add the formula for the taxes and total w/ shipping fee.
+
+(OPTIONAL)
+How I can make it easy without adding each other
+- (2 * 1095 + 790 + 499) 
+
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1.3 Unit Converter </title>
+</head>
+<body>
+    <script>
+        document.body.innerHTML =  Math.round(((1.60934 * 100) * 5)) / 100;  
+        document.body.innerHTML = Math.round(( ( (72-32) * 5) * 100) / 9) / 100;
+        document.body.innerHTML = Math.round(150 * (0.45359237 * 100) ) / 100;
+        /* 
+Step 1        
+5 miles in kilometers
+= 1 mile = 1.60934 km
+- Target is 5miles 
+
+convert the km to miles 
+Math.round(1.60934 * 100) / 100 to get the 2 decimals only
+
+
+Math.round(((1.60934 * 100) * 100)) / 100
+
+* The best practice is to round once, getting the final answer first before rounding is the best technique.
+
+
+Step 2
+72°F in °C
+* For temperature, subtract 32 from the Fahrenheit value, then multiply by 5 and divide by 9.
+= 22.22
+
+Math.round(( ( (72-32) * 5) * 100) / 9) / 100
+Math.round(( (40 * 5) * 100) / 9) / 100
+Math.round(20000 / 9) / 100
+Math.round(2222.2...) / 100
+2222 / 100
+= 22.22
+
+
+Step 3
+150 pounds in kilograms
+1 pound = 0.45359237 kg
+
+Math.round(150 * (0.45359237 * 100) ) / 100
+Math.round(150 * 45.359237 ) / 100
+Math.round(6803.88555) / 100
+6804 / 100
+= 68.04
+
+
+
+        
+        
+        
+        
+        
+        */
+
+    </script>
+</body>
+</html>

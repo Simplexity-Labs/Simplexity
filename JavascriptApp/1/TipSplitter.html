@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2 Tip Splitter </title>
+</head>
+<body>
+    <script>
+
+        document.body.innerHTML =  Math.round((Math.round(8650 * .15) + 8650) / 3 ) / 100  ; 
+
+        // Math.round((Math.round(8650 * .15) + 8650) / 3 ) / 100
+        // Math.round((Math.round(1297.5) + 8650 ) / 3  ) / 100
+        // Math.round((1298 + 8650 ) / 3) / 100
+        // Math.round(9948 / 3 ) / 100
+        // Math.round(3316) / 100
+        // 3316 / 100 
+        // = 33.16
+
+        /*
+First step
+A restaurant bill is $86.50
+- converting cents first then convert to dollar
+- 8650 / 100 = 86.5
+
+
+Second step
+The customer adds a 15% tip
+- Given that 15% is equal of 15/100 or .15 
+- (8650 * .15) / 100 = 12.975
+- Math.round(8650 * .15 ) / 100 = 12.98
+
+Second step continue
+adding the total and 15%
+- Math.round(8650 * 15) + 8650) / 100 
+
+Third step
+and the total is split between 3 people.
+- Math.round(Math.round(8650 * 15) + 8650) / 3 ) / 100 
+- it must 33.16
+
+Fourth step
+Goal: print how much each person pays, rounded to the nearest cent.
+
+
+        */
+
+
+    </script>
+</body>
+</html>

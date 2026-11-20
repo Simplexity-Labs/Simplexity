@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.4 Price Calculator </title>
+</head>
+<body>
+    <script>
+        alert(Math.round(3652 * .08) / 100);
+        alert(Math.round( 3652 - (3652 * .08)) / 100);
+        alert(Math.round( 3652 - 2400 - (3652 * .08) ) / 100);
+        alert(Math.round( 3652 - 2400 - (3652 * .08) ) * 50 / 100);
+        
+/* 
+
+The story
+A customer buys your product and pays 3652 cents ($36.52). That is the price you found.
+
+Your questions, in order
+
+How much does the website take? It takes 8% of what the customer paid. Whole cents only, because it’s real money.
+- Math.round(3652 * .08) / 100
+- Math.round(292.16) / 100
+- 292 / 100
+= 2.92
+
+How much do you receive? The customer paid 3652. The website took its share. What’s left for you?
+- Math.round( 3652 - (3652 * .08)) / 100
+- Math.round (3652 - 292.16) / 100
+- Math.round(3359.84) / 100
+- 3360 / 100
+= 33.6
+
+How much profit do you make on one item? Making the product cost you 2400 cents. You received some money in question 2. What’s the difference?
+- Math.round( 3652 - 2400 - (3652 * .08) ) / 100
+- Math.round(3652 - 2400 - 292.16) / 100
+- Math.round(959.84) / 100
+- 960 / 100
+- 9.6 
+Because the cost of a product is 2400 ($24) and the website took the 8% so the remaining is $9.6 dollars
+
+
+
+
+
+How much profit do you make after 50 sales? You make the same profit each time.
+- Math.round( 3652 - 2400 - (3652 * .08) ) * 50 / 100
+- Math.round(3652 - 2400 - 292.16) * 50 / 100
+- Math.round(959.84) * 50 / 100
+- 960 * 50 / 100
+- 48000 / 100
+= 480
+
+Tips
+
+Do one question at a time. Write the question as a comment, then the calculation under it, then check the answer.
+Questions 2, 3 and 4 use the answer from the question before. You can type the number in, as you did for 3360.
+Show each answer in dollars at the end, by dividing by 100.
+You can use one alert for each answer to show them one after another, or show one at a time.
+
+Send me your answers to all four questions when you finish, or just the first one if you want me to check it. If any question is still unclear, tell me the number and I’ll explain that one differently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+    </script>
+    
+</body>
+</html>
