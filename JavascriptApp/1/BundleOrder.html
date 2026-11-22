@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 1.5 Bundle Order </title>
+</head>
+<body>
+  <script>
+    document.body.innerHTML = (((((235 * 4) + (1490 * 2) + 550) - Math.round(((235 * 4) + (1490 * 2)) * .12)) + Math.round((((235 * 4) + (1490 * 2) + 550) - Math.round(((235 * 4) + (1490 * 2)) * .12)) * .08))) / 2 / 100;
+
+
+/* 
+
+A customer orders:
+
+4 stickers at $2.35 each and 2 mugs at $14.90 each
+- 4 stickers equivalent to (235 * 4) / 100
+- 2 mugs equivalent to (1490 * 2) / 100
+the orders are
+- ((235 * 4) + (1490 * 2)) / 100
+- (940 + (1490*2)) / 100
+- (940 + 2980) / 100 
+- 3920 / 100
+- 39.2
+
+
+
+
+The order has these extra charges:
+
+A 12% discount on the items (not on shipping)
+((235 * 4) + (1490 * 2)) / 100 
+but there is a discount of 12% = 12/100 = 0.12
+- ((235 * 4) + (1490 * 2)) / 100 w/ 12 percent
+I need math.round here because there is a decimal of .12 percent
+
+Answer
+- Math.round(((235 * 4) + (1490 * 2)) * .12 ) / 100 
+- Math.round(( 940 + (1490 * 2)) * .12 ) / 100 
+- Math.round(( 940 + 2980) * .12 ) / 100
+- Math.round(3920 * .12 ) / 100
+- Math.round(470.4) / 100
+- 470 / 100
+- 4.7
+
+
+$5.50 shipping
+Math.round(((235 * 4) + (1490 * 2)) / 100 
+now adding the $5.50 for shipping fee
+Answer
+Math.round(((235 * 4) + (1490 * 2) + 550 )) / 100
+- Math.round(((235 * 4) + (1490 * 2) + 550 )) / 100
+- Math.round((940 + (1490 * 2) + 550 )) / 100
+- Math.round((940 + 2980 + 550 )) / 100
+- Math.round(4470) / 100
+- 4470 / 100
+- 44.7
+
+
+
+
+8% tax on the discounted items plus shipping
+Answer
+
+The customer buys the items. Together they cost 3920 cents.
+((235 * 4) + (1490 * 2)) / 100
+(940 + (1490 * 2)) / 100
+(940 + 2980) / 100
+3920/100
+39.2
+
+
+You give a 12% discount. This makes the items cheaper. The shipping doesn't get a discount.
+- Math.round(((235 * 4) + (1490 * 2)) * .12 ) / 100 
+- Math.round(( 940 + (1490 * 2)) * .12 ) / 100 
+- Math.round(( 940 + 2980) * .12 ) / 100
+- Math.round(3920 * .12 ) / 100
+- Math.round(470.4) / 100
+- 470 / 100
+- 4.7
+
+
+You add the shipping fee (550 cents).
+Math.round(((235 * 4) + (1490 * 2) + 550 )) / 100
+- Math.round(((235 * 4) + (1490 * 2) + 550 )) / 100
+- Math.round((940 + (1490 * 2) + 550 )) / 100
+- Math.round((940 + 2980 + 550 )) / 100
+- Math.round(4470) / 100
+- 4470 / 100
+- 44.7
+
+Now you have one total: cheaper items + shipping. The government adds a tax of 8% on this total.
+The customer pays the total from step 3 plus the tax.
+
+((235 * 4) + (1490 * 2)) / 100 - Math.round(((235 * 4) + (1490 * 2)) * .12 ) / 100
+I will calculate it with answers not gonna one by one
+= 34.5
+
+now + shipping fee of 5.50
+((235 * 4) + (1490 * 2) + 550) / 100 - Math.round(((235 * 4) + (1490 * 2)) * .12 ) / 100
+
+
+The government adds a tax of 8% on this total.
+((((235 * 4) + (1490 * 2) + 550) - Math.round(((235 * 4) + (1490 * 2)) * .12)) + Math.round((((235 * 4) + (1490 * 2) + 550) - Math.round(((235 * 4) + (1490 * 2)) * .12)) * .08)) / 100
+=3.2
+4320 / 100
+43.2
+
+
+
+
+
+*/
+
+  </script>
+</body>
+</html>
