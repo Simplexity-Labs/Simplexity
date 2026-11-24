@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3e Lesson 3 Exercises - Strings</title>
+</head>
+<body>
+  <script>
+    alert('Total cost: $' + (599 + 295) / 100 );
+    alert("Total cost: $" + (599 + 295) / 100);
+    alert(`Total cost: $${(599 + 295) / 100}
+Thank you, come again!`);
+    
+    /* 
+
+   3e. You order 1 coffee $5.99 and 1 1bagel $2.95. Using math,
+   calculate the total cost, and using concatenation, create the text: 
+   'Total cost: $_____' (hint: calculate in cents to avoid inaccuracies)
+
+
+     3 ways to create strings.
+
+     1 coffee $5.99 convert to cents 599 
+     1 bagel $2.95 convert to cents 295
+
+     then convert back to dollars by / 100
+
+     ''
+    first calculate the math before using alert
+    given that string / number is converted into number to number base on the rules.
+    'Total cost: $' + (599 + 295) / 100
+    'Total cost: $' + 894/100
+    'Total cost: $' + 8.94;
+    
+    Then because the remaining is 8 it will turn into string
+    'Total cost: $8';
+    answer
+    alert('Total cost: $' + (599 + 295) / 100 );
+
+    
+
+     ""
+    - alert("Total cost: $" + (599  + 295) / 100);
+
+    ``
+    Backticks is different, you can use interpolation directly
+    - alert(`Total cost: $${(599 + 295) / 100}`);
+
+    including the multi line in the backticks base on the lessons letter j
+    but I did do it.
+    
+    
+    
+    
+    */
+  </script>
+</body>
+</html>
